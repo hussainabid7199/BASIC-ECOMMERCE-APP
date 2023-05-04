@@ -1,0 +1,53 @@
+// COLOR VARIABLE
+$theam-color: #1FB968;
+$nav-a: #BCB7BD;
+
+// COLOR VARIABLE
+
+.contactus{
+    background-color: #083019;
+    padding: 1rem;
+}
+
+
+.contactus li{
+    list-style: none;
+    margin: 0;
+    color: white;
+}
+
+.contactus a{
+    text-decoration: none;
+    margin: 0;
+    color: white;
+}
+
+
+.contactus i{
+    font-size: 1.8rem;
+    color: rgb(255, 240, 69);
+}
+
+.form label{
+    color: white;
+}
+
+.form input{
+    padding: .5rem;
+}
+
+.form .form-control{
+    font-size: 1.5rem;
+}
+
+
+.form textarea{
+    width: 100%;
+    border-radius: .3rem;
+}
+
+.form button{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .5rem 3rem;
+}

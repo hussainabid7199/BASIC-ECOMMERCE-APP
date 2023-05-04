@@ -1,0 +1,16 @@
+.bg-img {
+  height: 80vh;
+  width: 100vw;
+}
+
+.privacypolicy h1 {
+  font-size: 15rem;
+  font-weight: 800;
+  background: -webkit-linear-gradient(rgb(0, 255, 64), rgb(255, 200, 49));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2rem 0rem 2rem rgba(0, 0, 0, 0.281);
+  margin: 10% 0%;
+}
+
+/*# sourceMappingURL=privacypolicy.css.map */

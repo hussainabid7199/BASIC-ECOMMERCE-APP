@@ -1,0 +1,173 @@
+// COLOR VARIABLE
+$theam-color: #1FB968;
+$nav-a: #BCB7BD;
+
+// COLOR VARIABLE
+
+// Custom color
+.custom-col{
+    color: $theam-color;
+    font-weight: 700;
+}
+
+// Custom color
+
+footer{
+    background-color: #083019;
+}
+
+hr{
+    color: white;
+    width: 100%;
+}
+
+.icon-company h1{
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.icon-company img{
+    width: 3rem;
+    height: fit-content;
+}
+
+.social-icon{
+    font-size: 1.6rem;
+}
+
+.social-icon i{
+    margin: .4rem .8rem;
+    color: $theam-color;
+    text-shadow: 0 .3rem .5rem rgba(255, 255, 255, 0.088);
+}
+
+.about-company-footer{
+    color: white;
+    font-size: 1.4rem;
+}
+
+.about-company-footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.about-company-footer a:hover{
+    color: $theam-color;
+}
+
+.about-company-footer i{
+    font-size: 1.6rem;
+    color: $theam-color;
+    text-shadow: 0 .3rem .5rem rgba(255, 255, 255, 0.088);
+}
+
+.Links h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.Links li{
+    list-style: none;
+}
+
+.Links i,a{
+    font-size: 1.6rem;
+}
+
+.Links i{
+    color: $theam-color;
+}
+
+.Links a{
+    color: white;
+}
+.Links a:hover{
+    color: $theam-color;
+}
+
+.teach{
+    font-size: 1rem;
+    color: orange;
+}
+
+
+// newsletter
+
+.newsletter h1{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.newsletter p{
+    color: white;
+    font-size: 1.4rem;
+}
+
+.footer-form form{
+    width: 90%;
+}
+
+.footer-form form input, button{
+    padding: .5rem;
+}
+
+.footer-form .form-control{
+    font-size: 1.6rem;
+}
+
+.footer-form button{
+    font-size: 1.6rem;
+}
+
+.designDeveloped h1{
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.low-bar li{
+    margin-right: .8rem;
+    margin-left: .8rem;
+}
+
+.low-bar i{
+    color: $theam-color;
+}
+
+.low-bar a{
+    color: white;
+}
+.low-bar a:hover{
+    color: $theam-color;
+}
+
+.low-bar p{
+    color: white;
+}
+
+
+@media(max-width:880px){
+    .about-company-footer{
+        text-align: center;
+    }
+    .about-company-footer p{
+        margin: 2rem 6rem;
+    }
+    .Links h1,li{
+        text-align: center !important;
+    }
+    .newsletter{
+        text-align: center;
+    }
+    .designDeveloped{
+        justify-content: center;
+    }
+    .footer-form form{
+        width: 50%;
+    }
+    .low-bar ul{
+        margin: 0rem;
+    }
+}

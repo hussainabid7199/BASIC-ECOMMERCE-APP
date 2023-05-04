@@ -1,0 +1,49 @@
+<%- include("partials/header") %>
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 login-inner">
+        <div class="container my-5">
+          <div class="login-logo d-flex justify-content-center">
+            <img src="/assets/image/logo/Screenshot 2022-09-29 021109.png" alt="" class="img-fluid">
+          </div>
+          <div class="login-brand-name d-flex justify-content-center">
+            <h3>BigBooster.in</h3>
+          </div>
+        </div>
+
+        <div class="container d-flex justify-content-center">
+          <div class="login-form">
+            <form action="/login" method="post">
+              <input type="email" name="email-signup" class="form-control" id="email" placeholder="Email ID">
+              <input type="number" name="phone-signup" class="form-control" id="phone" placeholder="Mobile No.">
+              <input type="password" name="password-signup" id="password" class="form-control" placeholder="Password">
+              <input type="password" name="password-signup-confirm" id="password" class="form-control" placeholder="Confirm Password">
+              <div class="button">
+                <button type="submit" class="form-control btn btn-success">Singup</button>
+              </div>
+            </form>
+
+            <div class="container d-flex justify-content-center signup-terms">
+              <p>By Signing Up, You agree to Our <br><a href=""><span class="theam-text-col">Terms & Condition</span></a> and <a href="#"><span class="theam-text-col">Privacy Policy.</span></a></p>
+            </div>
+
+           <div class="newbees d-flex justify-content-center my-3">
+            <p><a href="/"><b>Joined us before?</b>&nbsp;&nbsp;<span class="theam-text-col"><b>Login</b></span></a></p>
+           </div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="container-fluid login-image-inner">
+          <img src="/assets/image/main/Homepage/header pic.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<%- include("partials/jsCDNfooter") %>

@@ -1,0 +1,77 @@
+<%- include("partials/header") %>
+
+<div class="container d-flex justify-content-center my-5">
+    <div class="row contactus">
+        <div class="col-lg-6">
+            <div class="address">
+                <i class="bi bi-house-door-fill"></i>
+                <ul>
+                    <li>52B Victor Palace</li>
+                    <li>Bazzar Mandi, Sant Nagar</li>
+                    <li>New Delhi (110223)</li>
+                </ul>
+            </div>
+            <div class="email">
+                <i class="bi bi-envelope-fill"></i>
+                <ul>
+                    <li><a href="mailto:hussainabid7199@gmail.com">hussainabid7199@gmail.com</a></li>
+                    <li><a href="mailto:hussainabid7199@gmail.com">hussainabid7199@gmail.com</a></li>
+                    <li><a href="mailto:hussainabid7199@gmail.com">hussainabid7199@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="phone">
+                <i class="bi bi-telephone-fill"></i>
+                <ul>
+                    <li><a href="tel:+919546283031">+91-9546283031</a></li>
+                    <li><a href="tel:+919546283031">+91-9546283031</a></li>
+                    <li><a href="tel:+919546283031">+91-9546283031</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form my-4" >
+                <form class="row g-3" method="post" action="/">
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName" name="firstName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" name="email">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPhone" class="form-label">Phone</label>
+                        <input type="number" class="form-control" id="inputPhone" name="phone">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="customFile">Attach Screenshot</label>
+                        <input type="file" class="form-control" id="customFile" />
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <label for="inputMassage" class="form-label">Massage</label>
+                        <textarea name="massage" id="inputMassage" cols="50" rows="3"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid my-3">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d912.6583794814993!2d85.15010170337648!3d25.59511146670128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5888941a1443%3A0x8075f62ac25c59e!2sSk%20Jha%20Classes!5e0!3m2!1sen!2sin!4v1662548458695!5m2!1sen!2sin"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+<%- include("partials/footer") %>

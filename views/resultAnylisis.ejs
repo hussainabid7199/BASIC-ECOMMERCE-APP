@@ -1,0 +1,131 @@
+<%- include("partials/header") %>
+
+
+    <style>
+        main {
+            background-color: greenyellow;
+        }
+
+        .curvechart {
+            width: 100% !important;
+            height: 40vh !important;
+            background-color: rgb(255, 255, 255) !important;
+            box-sizing: border-box !important;
+            box-shadow: 0 .5rem .9rem rgba(0, 0, 0, 0.295) !important;
+            border-radius: 1.5rem !important;
+            padding: .5rem;
+        }
+
+        .result-status {
+            width: 100%;
+            height: 40vh;
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            box-shadow: 0 .5rem .9rem rgba(0, 0, 0, 0.295);
+            border-radius: 1.5rem;
+        }
+
+        .result-status ul {
+            padding: 2rem 1rem;
+        }
+
+        .result-status li {
+            list-style: none;
+            padding: .3rem;
+        }
+
+        .result-status a {
+            text-decoration: none;
+        }
+
+        .result-status i {
+            margin: 0rem 1.5rem;
+            font-size: 2.1rem;
+        }
+
+        #curve_chart,
+        #chart_div,
+        #piechart {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .progress-anylisis,
+        .progress,
+        .upcoming-test {
+            width: 100%;
+            height: 38vh;
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            box-shadow: 0 .5rem .9rem rgba(0, 0, 0, 0.295);
+            border-radius: 1.5rem;
+        }
+
+        .upcoming-test i{
+            font-size: 8rem;
+        }
+        .upcoming-test a{
+            font-size: 1.5rem;
+        }
+    </style>
+
+    <section>
+        <main>
+            <div class="container-fluid pb-5 px-5">
+
+                <!-- <div class="container"> -->
+                    <div class="row pt-3">
+                        <div class="col-lg-8 mt-5">
+                            <div class="container curvechart">
+                                <div id="curve_chart"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-5">
+                            <div class="container result-status mx-1">
+                                <div>
+                                    <ul>
+                                        <li><i class="bi bi-box-fill"></i><a href="#">Raw Marks : <b>58</b></a></li>
+                                        <li><i class="bi bi-graph-up-arrow"></i><a href="#">Rank : <b>10</b></a></li>
+                                        <li><i class="bi bi-award"></i><a href="#">Accuracy : <b>80%</b></a></li>
+                                        <li><i class="bi bi-type-strikethrough"></i><a href="#">N.Marks : <b>N/A</b></a></li>
+                                        <li><i class="bi bi-vinyl"></i><a href="#">Cut Off : <b>85</b></a></li>
+                                        <li><i class="bi bi-hourglass-split"></i><a href="#">Time : <b>58:00</b></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col-lg-4 mt-3">
+                            <div class="container progress-anylisis mx-1">
+                                <div id="chart_div"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-3">
+                            <div class="container progress mx-1">
+                                <div id="piechart"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-3">
+                            <div class="container upcoming-test mx-1">
+                                <h3 class="py-4 px-3">Upcoming Test</h3>
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <i class="bi bi-calendar-date"></i>
+                                    </div>
+                                </div>
+                                <div class="button-upcoming-test d-flex justify-content-center">
+                                    <a href="#" type="button" class="btn btn-success px-5 py-2">Coming Soon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+
+                <%- include("components/line-chart-headerFile") %>
+            </div>
+        </main>
+    </section>
+
+    <%- include("partials/footer") %>

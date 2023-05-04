@@ -1,0 +1,102 @@
+<!-- Over All Progress Chart  -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', { 'packages': ['corechart'] });
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Month', 'Last Year', 'This Year'],
+      ['Jan', 10, 40],
+      ['Feb', 70, 60],
+      ['Mar', 06, 20],
+      ['Apr', 18, 40],
+      ['May', 90, 50],
+      ['Jun', 99, 50],
+      ['Jul', 20, 45],
+      ['Aug', 30, 80],
+      ['Sep', 40, 40],
+      ['Oct', 40, 100],
+      ['Nov', 70, 90],
+      ['Dec', 60, 100]
+    ]);
+
+    var options = {
+      title: 'Overall Performance',
+      curveType: 'function',
+      legend: { position: 'bottom' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);
+  }
+</script>
+
+
+<!-- Over All Progress Chart  -->
+
+
+<!-- Progress Anylisis Chart  -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Day', 'Progress'],
+          ['Mon',  100],
+          ['Tues',  70],
+          ['Wed',  30],
+          ['Thru',  90],
+          ['Fri',  70],
+          ['Sat',  130],
+          ['Sun',  160]
+        ]);
+
+        var options = {
+          title: 'Progress Analytics',
+          hAxis: {title: 'Day',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+<!-- Progress Anylisis Chart  -->
+
+
+<!-- Progress Chart -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", { packages: ["corechart"] });
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Language', 'Speakers (in millions)'],
+      ['Correct', 20], ['Wrong', 13], ['Unattemped', 4],
+    ]);
+
+    var options = {
+      title: 'Progress',
+      legend: 'none',
+      pieSliceText: 'label',
+      slices: {
+        4: { offset: 0.2 },
+        12: { offset: 0.3 },
+        14: { offset: 0.4 },
+        15: { offset: 0.5 },
+      },
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options);
+  }
+</script>
+
+<!-- Progress Chart -->

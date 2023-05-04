@@ -1,0 +1,76 @@
+@import url(/assets/stylesheet/css/header.css);
+@import url(/assets/stylesheet/css/footer.css);
+@import url(/assets/stylesheet/css/index.css);
+@import url(/assets/stylesheet/css/courseDetail.css);
+@import url(/assets/stylesheet/css/privacypolicy.css);
+@import url(/assets/stylesheet/css/contactus.css);
+@import url(/assets/stylesheet/css/aboutus.css);
+@import url(/assets/stylesheet/css/login.css);
+// @import url(/assets/stylesheet/css/side-bar-dashboard.css);
+// @import url(/assets/stylesheet/css/nav-bar-dashboard.css);
+
+// COLOR VARIABLE
+$theam-color: #1FB968;
+$nav-a: #BCB7BD;
+
+// COLOR VARIABLE
+
+html{
+    font-size: 65.2%;
+}
+
+$theam-col: rgb(0, 60, 83);
+$text-white-col: white;
+$tt-style: rgb(1, 151, 1);
+
+
+body{
+    // font-family: "Open Sans";
+        font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+.activeBtn{
+    color: #1FB968;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:576px){
+    html{
+        font-size: 40%;
+    }
+}

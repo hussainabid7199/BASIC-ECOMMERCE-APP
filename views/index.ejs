@@ -1,0 +1,465 @@
+<%- include("partials/header") %>
+
+    <body>
+
+        <!-- Head Section -->
+        <section>
+            <div class="container-fluid my-4 vh-80">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center heading" id="heading">
+                        <div class="mx-5">
+                            <h1 class="my-4 content" id="headMain">
+                                One of the best online test platform in india
+                            </h1>
+                            <p class="my-3 content" id="headPara">Big Booster provides best question collection for
+                                government exams which is very helpful for students in
+                                competitive examination.</p>
+                            <div class="buttonform my-5 d-flex justify-content-left">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col image">
+                        <img src="/assets/image/main/Homepage/header pic.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Head Section -->
+
+        <!-- Student Update Bar Design -->
+        <%- include("components/studentDbar") %>
+            <!-- Student Update Bar Design -->
+
+
+            <!-- Top Course Section Start -->
+            <section>
+                <div class="container-fluid">
+                    <div class="row common-margin">
+                        <div class="col-lg-8 col-sm-12 col-md-12">
+                            <!-- Trending Test Series Start-->
+                            <div class="row">
+                                <div class="container-fluid col-12 my-5 text-title d-flex justify-content-between">
+                                    <div class="serise-title mx-5">
+                                        <h3>Trending Test Series</h3>
+                                    </div>
+                                    <div class="seeAllbtn mx-5"><button>See All</button></div>
+                                </div>
+
+                                <div class="container-fluid d-flex justify-content-center flex-wrap">
+
+                                    <!-- Card Section -->
+                                    <% trendingPosts.forEach(function(card){ %>
+                                        <div class="card" onclick="location.href='<%= card.cardTitle %>'">
+                                            <div class="image-card">
+                                                <img src="/assets/image/main/Homepage/group_D image.png" alt=""
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="content-box">
+                                                <div class="row">
+                                                    <div class="col-12 head-margin" id="headMargin">
+                                                        <a href="<%= card.cardTitle %>" class="card-heading">
+                                                            <h4>
+                                                                <%= card.cardTitle.substring(0, 27) + "..." %>
+                                                            </h4>
+                                                        </a>
+                                                        <a href="#" class="card-discription">
+                                                            <p>
+                                                                <%= card.cardDiscription %>
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <span class="price mx-1">
+                                                            <p>&#x20b9;<%= card.currentPrice %>
+                                                            </p>
+                                                        </span>
+                                                        <span class="disabled cancelPrice  mx-1">
+                                                            <p>&#x20b9;<%= card.realPrice %>
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="rating d-flex justify-content-between">
+                                                        <div class="rating-inner">
+                                                            <span class="mx-1 rating-reach">
+                                                                <%= card.rating %>
+                                                            </span>
+                                                            <span class="mx-1 rating-icon">
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-half"></i>
+                                                                <i class="bi bi-star"></i>
+                                                            </span>
+                                                            <sapn class="mx-1 number-of-rating">
+                                                                <%= card.totalRating %></span>
+                                                        </div>
+                                                        <div class="wishlist mx-4">
+                                                            <span class="wistlist-icon"><i
+                                                                    class="bi bi-heart"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <% }) %>
+
+                                            <!-- Card Section End -->
+                                </div>
+                            </div>
+
+                            <!-- Trending Test Series End -->
+
+
+                            <!-- Free Test Series Start -->
+
+                            <div class="row">
+                                <div class="container-fluid col-12 my-5 text-title d-flex justify-content-between">
+                                    <div class="serise-title mx-5">
+                                        <h3>Free Tests</h3>
+                                    </div>
+                                    <div class="seeAllbtn mx-5"><button>See All</button></div>
+                                </div>
+
+                                <div class="container-fluid d-flex justify-content-center flex-wrap">
+
+                                    <!-- Card Section -->
+                                    <% freePosts.forEach(function(card){ %>
+                                        <div class="card" onclick="location.href='<%= card.cardTitle %>'">
+                                            <div class="image-card">
+                                                <img src="/assets/image/main/Homepage/group_D image.png" alt=""
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="content-box">
+                                                <div class="row">
+                                                    <div class="col-12 head-margin" id="headMargin">
+                                                        <a href="<%= card.cardTitle %>" class="card-heading">
+                                                            <h4>
+                                                                <%= card.cardTitle.substring(0, 27) + "..." %>
+                                                            </h4>
+                                                        </a>
+                                                        <a href="#" class="card-discription">
+                                                            <p>
+                                                                <%= card.cardDiscription %>
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <span class="price mx-1">
+                                                            <p>&#x20b9;<%= card.currentPrice %>
+                                                            </p>
+                                                        </span>
+                                                        <span class="disabled cancelPrice  mx-1">
+                                                            <p>&#x20b9;<%= card.realPrice %>
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="rating d-flex justify-content-between">
+                                                        <div class="rating-inner">
+                                                            <span class="mx-1 rating-reach">
+                                                                <%= card.rating %>
+                                                            </span>
+                                                            <span class="mx-1 rating-icon">
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-half"></i>
+                                                                <i class="bi bi-star"></i>
+                                                            </span>
+                                                            <sapn class="mx-1 number-of-rating">
+                                                                <%= card.totalRating %></span>
+                                                        </div>
+                                                        <div class="wishlist mx-4">
+                                                            <span class="wistlist-icon"><i
+                                                                    class="bi bi-heart"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <% }) %>
+                                            <!-- Card Section End -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Free Test Series End  -->
+
+                        <!-- Popular Categories Section -->
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="container py-5">
+                                <div class="heading-categ">
+                                    <h3>Popular categories</h3>
+                                </div>
+                                <div class="categ-content">
+                                    <ul>
+
+                                        <li class="my-2">
+                                            <a href="#">
+                                                <div class="container d-flex justify-content-center">
+                                                    <div class="col-2 icon-categ-img">
+                                                        <div class="icon-categ mx-1"><img
+                                                                src="/assets/image/main/Homepage/bihar stste exam logo.png"
+                                                                alt="" class="img-field"></div>
+                                                    </div>
+                                                    <div class="col-10 mx-3 categ-text my-3">
+                                                        <h6 class="popCetTitle">Lorem, ipsum dolor.</h6>
+                                                        <p class="popCetPara">Lorem ipsum dolor sit, amet consectetur
+                                                            adipisicing elit. Placeat, veritatis!</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Popular Categories Section End -->
+                    </div>
+                </div>
+                <section>
+
+
+                    <!-- Top Course Section End-->
+
+
+                    <!-- Recently Launched Section Start -->
+                    <section>
+                        <div class="container">
+                            <div class="row common-margin">
+                                <div class="container-fluid col-12 my-5 text-title d-flex justify-content-between">
+                                    <div class="serise-title mx-5">
+                                        <h3>Recently Launched Test</h3>
+                                    </div>
+                                    <div class="seeAllbtn mx-5"><button>See All</button></div>
+                                </div>
+
+                                <div class="container-fluid d-flex justify-content-center flex-wrap">
+
+                                    <!-- Card Section -->
+                                    <% recentlyPosts.forEach(function(card){ %>
+                                        <div class="card" onclick="location.href='<%= card.cardTitle %>'">
+                                            <div class="image-card">
+                                                <img src="/assets/image/main/Homepage/group_D image.png" alt=""
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="content-box">
+                                                <div class="row">
+                                                    <div class="col-12 head-margin" id="headMargin">
+                                                        <a href="<%= card.cardTitle %>" class="card-heading">
+                                                            <h4>
+                                                                <%= card.cardTitle %>
+                                                            </h4>
+                                                        </a>
+                                                        <a href="#" class="card-discription">
+                                                            <p>
+                                                                <%= card.cardDiscription %>
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <span class="price mx-1">
+                                                            <p>&#x20b9;<%= card.currentPrice %>
+                                                            </p>
+                                                        </span>
+                                                        <span class="disabled cancelPrice  mx-1">
+                                                            <p>&#x20b9;<%= card.realPrice %>
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="rating d-flex justify-content-between">
+                                                        <div class="rating-inner">
+                                                            <span class="mx-1 rating-reach">
+                                                                <%= card.rating %>
+                                                            </span>
+                                                            <span class="mx-1 rating-icon">
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-half"></i>
+                                                                <i class="bi bi-star"></i>
+                                                            </span>
+                                                            <sapn class="mx-1 number-of-rating">
+                                                                <%= card.totalRating %></span>
+                                                        </div>
+                                                        <div class="wishlist mx-4">
+                                                            <span class="wistlist-icon"><i
+                                                                    class="bi bi-heart"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <% }) %>
+
+                                            <!-- Card Section End -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Recently Launched Section End -->
+
+
+                    <!-- Booster Dose Start -->
+                    <section>
+                        <div class="container">
+                            <div class="row common-margin">
+                                <div class="container-fluid col-12 my-5 text-title d-flex justify-content-between">
+                                    <div class="serise-title mx-5">
+                                        <h3>Booster Dose</h3>
+                                    </div>
+                                    <div class="seeAllbtn mx-5"><button>See All</button></div>
+                                </div>
+
+                                <div class="container-fluid d-flex justify-content-center flex-wrap">
+
+                                    <!-- Card Section -->
+                                    <% boosterPosts.forEach(function(card){ %>
+                                        <div class="card" onclick="location.href='<%= card.cardTitle %>'">
+                                            <div class="image-card">
+                                                <img src="/assets/image/main/Homepage/group_D image.png" alt=""
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="content-box">
+                                                <div class="row">
+                                                    <div class="col-12 head-margin" id="headMargin">
+                                                        <a href="<%= card.cardTitle %>" class="card-heading">
+                                                            <h4>
+                                                                <%= card.cardTitle %>
+                                                            </h4>
+                                                        </a>
+                                                        <a href="#" class="card-discription">
+                                                            <p>
+                                                                <%= card.cardDiscription %>
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <span class="price mx-1">
+                                                            <p>&#x20b9;<%= card.currentPrice %>
+                                                            </p>
+                                                        </span>
+                                                        <span class="disabled cancelPrice  mx-1">
+                                                            <p>&#x20b9;<%= card.realPrice %>
+                                                            </p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="rating d-flex justify-content-between">
+                                                        <div class="rating-inner">
+                                                            <span class="mx-1 rating-reach">
+                                                                <%= card.rating %>
+                                                            </span>
+                                                            <span class="mx-1 rating-icon">
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-fill"></i>
+                                                                <i class="bi bi-star-half"></i>
+                                                                <i class="bi bi-star"></i>
+                                                            </span>
+                                                            <sapn class="mx-1 number-of-rating">
+                                                                <%= card.totalRating %></span>
+                                                        </div>
+                                                        <div class="wishlist mx-4">
+                                                            <span class="wistlist-icon"><i
+                                                                    class="bi bi-heart"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <% }) %>
+
+                                            <!-- Card Section End -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Booster Dose End -->
+
+
+                    <!-- Testemonial Video Section Start -->
+                    <section>
+                        <div class="container">
+                            <div class="video my-5">
+                                <a href="https://youtu.be/ANspVuXTOD4" target="_blank" class="auto_play">
+                                    <img src="/assets/image/main/Homepage/video wala pic.png" alt="">
+                                </a>
+                            </div>
+                            <div class="video-content">
+                                <h2 class="video-head my-5">Access to <span class="custom-col">Everything</span>, For
+                                    <br><Span class="custom-col">Everyone</Span></h2>
+                                <p class="video-para my-2"><span class="custom-col">Big Booster</span> provides best
+                                    question collection
+                                    for government exams which is very helpful for
+                                    students in competitive examination. The questions are prepared by experienced
+                                    faculty. it has
+                                    a huge community working behind them to make it better day by day and trying to
+                                    fulfill all the
+                                    requirements of the user. <span class="custom-col">Big Booster</span> always try to
+                                    set the question
+                                    which can be helpful in
+                                    examination and mostly questions are prepared from previous year question.Our main
+                                    focus is
+                                    to boost the score of student by providing them some good test series
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Testemonial Video Section End -->
+
+
+                    <!-- Success section start -->
+                    <%- include("components/carousel") %>
+                        <!-- Success section End -->
+
+
+
+
+                        <!-- FAQs Section Start -->
+                        <%- include("components/faqs") %>
+                            <!-- FAQs Section End -->
+
+
+
+
+                            <%- include("partials/footer") %>
+
+
+
+
+                                <!-- <script>
+  window.onload = function() {
+    var videos = document.querySelectorAll(".thumbnail");
+    for (var i = 0; i < videos.length; i++) {
+        videos[i].addEventListener('click', clickHandler, false);
+    };
+
+  function clickHandler(el) {
+    var mainVideo = document.getElementById("mainVideo");
+    mainVideo.src = el.srcElement.currentSrc;
+  }
+</script>
+
+<video id="mainVideo" width=320 height=240 autoplay></video><br/>
+<video class="thumbnail" width=100 height=100>
+    <source src="https://www.youtube.com/embed/ANspVuXTOD4" type=" ">
+</video>
+<video class="thumbnail" width=100 height=100>
+    <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+</video> -->

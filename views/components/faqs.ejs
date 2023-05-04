@@ -1,0 +1,27 @@
+  <!-- FAQs Section  -->
+        
+
+
+  <section class="faq-container">
+    <h3 class="faq-heading">____ FAQs</h3>
+    <h2 class="faq-heading-text">Still having a doubt? Let's be more clearer!</h2>
+    <% faqposts.forEach(function(pop){ %>
+    <div class="faq">
+        <!-- faq question -->
+        <h1 class="faq-page"><span class="custom-col num"><%= pop.number %></span> <%= pop.title %></h1>
+
+        <!-- faq answer -->
+        <div class="faq-body">
+            <p> <%= pop.para %></p>
+        </div>
+    </div>
+    <hr class="hr-line">
+    <% }) %>
+</section>
+
+
+
+
+
+
+<!-- FAQs Section  -->

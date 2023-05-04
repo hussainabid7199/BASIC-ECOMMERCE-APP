@@ -1,0 +1,673 @@
+<%- include("partials/header") %>
+    <div class="container-fluid my-5">
+        <div class="container-fluid row top-bar my-5">
+            <div class=" d-flex justify-content-between">
+                <i class="bi bi-arrow-left-square"></i>
+                <span class="d-flex"><i class="bi bi-clock-history"></i>&nbsp;&nbsp;&nbsp;<h3 style="margin: auto;">
+                        12:30:09</h3></span>
+            </div>
+        </div>
+        <div class="container question px-5">
+            <div class="questionNo">
+                <h4>Question 30/200</h4>
+            </div>
+            <div class="questionDisplay my-5">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, odio.</h3>
+            </div>
+        </div>
+        <div class="choiceMenu my-5">
+            <div class="container question-box">
+                <div class="questionOption d-flex"><input type="radio" name="qusetion1" id="question1">
+                    <h6>Hello Word</h6>
+                </div>
+                <div class="questionOption d-flex"><input type="radio" name="qusetion1" id="question1">
+                    <h6>Hello Word</h6>
+                </div>
+                <div class="questionOption d-flex"><input type="radio" name="qusetion1" id="question1">
+                    <h6>Hello Word</h6>
+                </div>
+                <div class="questionOption d-flex"><input type="radio" name="qusetion1" id="question1">
+                    <h6>Hello Word</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="container prev-next-btn my-4 d-flex justify-content-center">
+            <button class="btn btn-warning">Prvious</button>
+            <button class="btn btn-success">Next</button>
+        </div>
+    </div>
+
+
+    <style>
+        .top-bar i {
+            font-size: 2.5rem;
+        }
+
+        .question-box {
+            width: 80%;
+        }
+
+        .questionOption {
+            background-color: white;
+            box-sizing: border-box;
+            box-shadow: 0 .3rem .4rem rgba(0, 0, 0, 0.049);
+            padding: 1rem;
+            margin: .5rem;
+        }
+
+
+        .questionOption input[type='radio'] {
+            width: 20px;
+            height: 20px;
+            margin: .2rem 1.5rem;
+        }
+
+        .questionOption h6 {
+            font-size: 2rem;
+            color: rgb(0, 207, 0);
+        }
+
+        .questionNo h4 {
+            color: green;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .prev-next-btn button {
+            font-size: 1.6rem;
+            padding: .5rem 5.5rem;
+            margin: 0rem 1.3rem;
+        }
+    </style>
+
+
+
+    <!-- Pop Up Time Out -->
+
+    <section>
+        <div class="timeOut">
+            <div class="container timeOut-inner">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center"><i class="bi bi-check-circle"></i></div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <h5>Your test is automatically submitted successfully!</h5>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center"><a href="#" type="button"
+                            class="btn btn-success">Done</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <style>
+        .timeOut {
+            height: 100vh;
+        }
+
+        .timeOut-inner {
+            position: relative;
+            top: 30vh;
+            width: 50rem;
+            height: 25rem;
+            background-color: rgba(255, 255, 255, 0.253);
+            box-sizing: border-box;
+            box-shadow: .0rem .4rem .5rem .3rem rgba(0, 0, 0, 0.192);
+            border-radius: 1rem;
+        }
+
+        .timeOut-inner i {
+            font-size: 4rem;
+            margin: 2.3rem 0rem;
+            color: rgb(1, 88, 1);
+        }
+
+        .timeOut-inner h5 {
+            font-size: 2rem;
+            text-align: center;
+            margin: 0rem 0rem;
+            color: rgb(0, 90, 0);
+        }
+
+        .timeOut-inner a {
+            font-size: 1.6rem;
+            padding: .5rem 3.5rem;
+            text-align: center;
+            margin: 2.5rem 0rem;
+        }
+    </style>
+
+
+    <!-- Pop Up Time Out -->
+
+    <!-- component card -->
+
+    <head>
+        <!-- Swiper -->
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <!-- Swiper -->
+    </head>
+
+    <section class="transprant-back-01 mx-5 my-5 outer-section">
+        <div class="container-fluid d-flex justify-content-center py-5">
+            <div class="container-fluid slide">
+                <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/Basics Maths.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Test Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/current afferes.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Phycology Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/current afferes.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Exam Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/current afferes.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Board Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/general science.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Group-D Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/general science.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Group-D Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/general science.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Group-D Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/general science.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Group-D Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/general science.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Group-D Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/general science.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Group-D Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/general science.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>Group-D Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="box-element">
+                                <div class="image">
+                                    <img src="/assets/image/main/Homepage/current afferes.png" alt="">
+                                </div>
+                                <div class="content-tile my-4">
+                                    <h3>NTPC Series</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nisi
+                                        dolores
+                                        sequi
+                                        ex quis at!</p>
+
+                                </div>
+                                <div>
+                                    <a href="#"><button class="btn btn-warning">Explore Now</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- swiper -->
+
+
+    <!-- css  -->
+
+    <style>
+        .outer-section {
+            box-sizing: border-box;
+            box-shadow: 0 .2rem .3rem rgba(0, 0, 0, 0.027);
+        }
+
+        .slide {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .slide {
+            background: rgba(255, 255, 255, 0);
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: left;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            border-radius: .5rem;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.274);
+            margin-top: .8rem;
+            margin-bottom: .8rem;
+            width: 280px !important;
+            transition: .7s;
+            transition-timing-function: ease-in-out;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* .swiper-slide:hover{
+    background-color: rgb(20, 0, 60);
+    width: 295px !important;
+    color: white;
+} */
+
+
+        /* .swiper-slide img {
+    display: block;
+    width: 100%;
+   height: 50%;
+     object-fit: cover;
+     background-color: rgb(4, 4, 58);
+   } */
+
+        .swiper-slide .image {
+            padding: .2rem;
+            height: 240px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            border-radius: .6rem;
+            box-shadow: 0 5px 5px rgba(1, 1, 75, 0.151);
+            display: block;
+            object-fit: fill;
+        }
+
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: rgb(0, 255, 255) !important;
+        }
+
+        .content-tile h3 {
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        .content-tile p {
+            font-size: 1.3rem;
+        }
+
+        .swiper-slide {
+            height: max-content !important;
+            padding: 1rem;
+        }
+
+        .box-element button {
+            font-size: 1.5rem;
+        }
+    </style>
+
+
+    <!-- css  -->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- swiper -->
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- Initialize Swiper -->
+
+
+    <!-- component card -->
+
+
+
+
+    <!-- Study Notes Component -->
+
+
+
+    <!-- Table component -->
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="viewErrorModal" data-bs-target="#viewErrorModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="viewErrorModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <select onChange={(val)=>
+                        style
+                        <option value="_hin">Hi</option>
+                        {
+                        props.questions.length > 0 ? (props.questions[0]['question_eng'] ? <option value="_eng">Eng
+                        </option> : false) : false
+                        }
+                    </select>
+                    <div style=" display: flex" }}>
+                        <h5 class="modal-title" id="exampleModalLabel" style="font-weight: bold" }}>Question No. →
+                            {props.currentQuestionNo}&nbsp;&nbsp;&nbsp;</h5>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
+                                checked={props.contentIsEditable} />
+                            <label class="form-check-label" htmlFor="flexSwitchCheckChecked">Edit</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style=" display: flex" }}>
+                        <p style=" color: red" , fontWeight: "bold" }}>{props.whatisError}</p>
+                        <img id="modal_view_update_question_loader" src={process.env.PUBLIC_URL + "loader.svg" } alt=""
+                            height="50px" style="position: fixed" , top: "50vh" , left: "50vw" , display: "none" }} />
+                    </div>
+                    {props.questions.length == 0 ? <img id="modal_view_loader" src={process.env.PUBLIC_URL
+                        + "loader.svg" } alt="" height="40px" style={{ display: "flex" , margin: "auto" }} /> : <>
+                        <div class="mb-3">
+                            <label htmlFor="message-text" class="col-htmlForm-label">Question</label>
+                            <div style={{ display: "flex" }}>
+                                <p contentEditable={props.contentIsEditable} id="question" class="question-elements"
+                                    style={{ width: "100%" }}> {props.contentIsEditable ? props.questions[0]['question'
+                                    + props.language] : parse(props.questions[0]['question' + props.language])} </p>
+                                <button>Save</button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label htmlFor="recipient-name" class="col-htmlForm-label">Option A</label>
+                            <div style={{ display: "flex" }}>
+                                <p contentEditable={props.contentIsEditable} id="option1" class="question-elements"
+                                    style={{ width: "100%" }}>{props.contentIsEditable ? props.questions[0]['option1' +
+                                    props.language] : parse(props.questions[0]['option1' + props.language])} </p>
+                                <button>Save</button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label htmlFor="recipient-name" class="col-htmlForm-label">Option B</label>
+                            <div style={{ display: "flex" }}>
+                                <p contentEditable={props.contentIsEditable} id="option2" class="question-elements"
+                                    style={{ width: "100%" }}>{props.contentIsEditable ? props.questions[0]['option2' +
+                                    props.language] : parse(props.questions[0]['option2' + props.language])} </p>
+                                <button>Save</button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label htmlFor="recipient-name" class="col-htmlForm-label">Option C</label>
+                            <div style={{ display: "flex" }}>
+                                <p contentEditable={props.contentIsEditable} id="option3" class="question-elements"
+                                    style={{ width: "100%" }}>{props.contentIsEditable ? props.questions[0]['option3' +
+                                    props.language] : parse(props.questions[0]['option3' + props.language])} </p>
+                                <button>Save</button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label htmlFor="recipient-name" class="col-htmlForm-label">Option D</label>
+                            <div style=" display: flex" }}>
+                                <p contentEditable={props.contentIsEditable} id="option4" class="question-elements"
+                                    style=" width: 100%" }}>{props.contentIsEditable ? props.questions[0]['option4' +
+                                    props.language] : parse(props.questions[0]['option4' + props.language])} </p>
+                                <button>Save</button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label htmlFor="recipient-name" class="col-htmlForm-label">Answer</label>
+                            <div style=" display: flex" }}>
+                                <select style="width: 100%" }} name="answer" id="answer">
+                                    <option selected={props.questions[0]['answer']=="A" ? true : false} value="A">A
+                                    </option>
+                                    <option selected={props.questions[0]['answer']=="B" ? true : false} value="B">B
+                                    </option>
+                                    <option selected={props.questions[0]['answer']=="C" ? true : false} value="C">C
+                                    </option>
+                                    <option selected={props.questions[0]['answer']=="D" ? true : false} value="D">D
+                                    </option>
+                                </select>
+                                <button>Save</button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label htmlFor="message-text" class="col-htmlForm-label">Solution</label>
+                            <div style=" display: flex" , }}>
+                                <p contentEditable={props.contentIsEditable} id="description" class="question-elements"
+                                    style="width: 100%" }}>"lang"</p>
+                                <button>Save</button>
+                            </div>
+                        </div>
+                    </>}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Table component -->
+
+
+
+
+
+    <%- include("partials/jsCDNfooter") %>

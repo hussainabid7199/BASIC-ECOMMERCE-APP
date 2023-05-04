@@ -1,0 +1,95 @@
+.login-inner {
+  height: 70vh;
+}
+
+.login-logo img {
+  width: 14rem;
+  height: auto;
+}
+
+.login-brand-name h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(1, 1, 39);
+}
+
+.login-form {
+  width: 45rem;
+}
+
+.login-form input {
+  padding: 1rem;
+  margin: 1rem 0rem;
+  border-radius: 0.7rem;
+  box-sizing: border-box;
+  box-shadow: 0rem 0rem 0.8rem 0rem rgba(0, 0, 0, 0.123);
+  font-size: 1.3rem;
+  background: rgba(226, 241, 244, 0.4431372549);
+}
+
+.forget-password-login a {
+  color: #1FB968;
+}
+
+.login-form button {
+  padding: 0.8rem;
+  margin: 1rem 0rem;
+  font-size: 1.7rem;
+  border-radius: 0.7rem;
+}
+
+.login-hr {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  border: solid 0.1rem rgb(0, 0, 0);
+  height: 0.2rem;
+}
+
+.login-or {
+  margin: 0rem 1.3rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.login-image-inner img {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .login-image-inner img {
+    display: block;
+    visibility: collapse;
+    height: 0rem !important;
+  }
+}
+.signup-terms p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.forget-password {
+  width: 55rem;
+}
+
+.forget-password h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #020156;
+}
+
+.forget-password p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #020156;
+}
+
+.otp-input input {
+  width: 15%;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 1.7rem;
+}
+
+/*# sourceMappingURL=login.css.map */

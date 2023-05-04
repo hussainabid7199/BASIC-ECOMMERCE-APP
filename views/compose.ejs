@@ -1,0 +1,215 @@
+<%- include("partials/header") %>
+
+  <style>
+    #alertauto {
+      visibility: collapse;
+    }
+
+    form label {
+      font-size: 1.3rem;
+    }
+
+    form .form-control {
+      font-size: 1.5rem;
+    }
+
+    form .form-select {
+      font-size: 1.5rem;
+    }
+
+    form .form-check-label,
+    .form-check-input {
+      font-size: 1rem;
+    }
+
+    form .button-sub {
+      font-size: 1.5rem;
+      padding: .3rem 1.5rem;
+    }
+  </style>
+
+  <div class="container-fluid d-flex justify-content-center">
+    <div class="alert alert-primary" id="alertauto" role="alert">
+      <h3>Data Uploaded Successfully!</h3>
+    </div>
+  </div>
+
+
+  <!-- id="pure-form" -->
+  <div class="container">
+    <div class="row my-5">
+      <div class="col-lg-5 mx-3">
+        <h1><b>Product Section</b></h1>
+        <form class="row g-3" method="post" action="/compose">
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Select Your Section</label>
+            <select class="form-select" name="cardSection" id="cardSection" required>
+              <option selected>Choose...</option>
+              <option value="railway">Railway</option>
+              <option value="freetest">Free Test</option>
+              <option value="recently">Recently Launched</option>
+              <option value="boosterdose">Booster Dose</option>
+            </select>
+          </div>
+          <div class="col-md-8">
+            <label for="Product Name" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="productName" name="productName" required>
+          </div>
+          <div class="col-md-12">
+            <label for="inputMassage" class="form-label">Product Discription</label>
+            <input type="text" class="form-control" id="productDiscription" name="productDiscription" required>
+          </div>
+          <!--  -->
+          <div class="col-12">
+            <label for="inputMassage" class="form-label">Current Price</label>
+            <input type="text" class="form-control" id="currentPrice" name="currentPrice" required>
+          </div>
+          <div class="col-12">
+            <label for="inputMassage" class="form-label">MRP</label>
+            <input type="text" class="form-control" id="mrp" name="mrp" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputMassage" class="form-label">Rating (Eg:- 4.3)</label>
+            <input type="text" class="form-control" id="rating" name="rating" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputMassage" class="form-label">Total Rating (Eg:- 4563)</label>
+            <input type="text" class="form-control" id="totalRating" name="totalRating" required>
+          </div>
+          <div class="col-12">
+            <label for="aboutCourseTitle" class="form-label">About Course Title</label>
+            <input type="text" class="form-control" id="aboutCourseTitle" name="aboutCourseTitle" required>
+          </div>
+          <div class="col-12">
+            <label for="aboutCourseContent" class="form-label">About Course Content - 1</label>
+            <textarea class="form-control" placeholder="Enter your answer" id="aboutCourseContent1"
+              name="aboutCourseContent1" style="height: 100px"></textarea>
+          </div>
+          <div class="col-12">
+            <label for="aboutCourseContent" class="form-label">About Course Content - 2</label>
+            <textarea class="form-control" placeholder="Enter your answer" id="aboutCourseContent2"
+              name="aboutCourseContent2" style="height: 100px"></textarea>
+          </div>
+          <div class="col-12">
+            <label for="aboutCourseBulletPoint" class="form-label">About Course Bullet Point 1</label>
+            <input type="text" class="form-control" id="aboutbullet" name="aboutbullet1" required>
+          </div>
+          <div class="col-12">
+            <label for="aboutCourseBulletPoint" class="form-label">About Course Bullet Point 2</label>
+            <input type="text" class="form-control" id="aboutbullet" name="aboutbullet2" required>
+          </div>
+          <div class="col-12">
+            <label for="aboutCourseBulletPoint" class="form-label">About Course Bullet Point 3</label>
+            <input type="text" class="form-control" id="aboutbullet" name="aboutbullet3">
+          </div>
+          <div class="col-12">
+            <label for="aboutCourseBulletPoint" class="form-label">About Course Bullet Point 4</label>
+            <input type="text" class="form-control" id="aboutbullet" name="aboutbullet4">
+          </div>
+          <div class="col-12">
+            <label for="aboutCourseBulletPoint" class="form-label">About Course Bullet Point 5</label>
+            <input type="text" class="form-control" id="aboutbullet" name="aboutbullet5">
+          </div>
+          <!-- <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" required>
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div> -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-success button-sub">Add Product</button>
+          </div>
+        </form>
+      </div>
+
+
+
+<!-- 
+      <div class="col-lg-5 mx-3">
+        <h1><b>FAQs Section</b></h1>
+        <form class="row g-3" method="post" action="/compose">
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Select Your Section</label>
+            <select name="cardSection" id="cardSection" class="form-select">
+              <option selected>Choose...</option>
+              <option value="faqs">FAQs</option>
+              <option value="coursedetails">Course Detail</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="serialNo" class="form-label">Serial No</label>
+            <input type="text" class="form-control" id="serialno" name="serialno" required>
+          </div>
+          <div class="col-12">
+            <label for="FAQs Title" class="form-label">FAQs Title</label>
+            <input type="text" class="form-control" id="faqTitle" name="faqTitle" required>
+          </div>
+          <div class="col-12">
+            <label for="FAQs Answer" class="form-label">FAQs Answer</label>
+            <textarea class="form-control" placeholder="Enter your answer" id="floatingTextarea2" name="faqPara"
+              style="height: 100px"></textarea>
+          </div>
+          <!-- <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" required>
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div> -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-success button-sub">Submit Query</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-lg-5 mx-3">
+      <h1><b>Popular Section</b></h1>
+      <form class="row g-3" method="post" action="/compose">
+        <div class="col-md-6">
+          <label for="inputState" class="form-label">Select Your Section</label>
+          <select name="cardSection" id="cardSection" class="form-select">
+            <option selected>Choose...</option>
+            <option value="faqs">Popular Categories</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="serialNo" class="form-label">Serial No</label>
+          <input type="text" class="form-control" id="serialno" name="popularserialno" required>
+        </div>
+        <div class="col-12">
+          <label for="FAQs Title" class="form-label">Popular Category Title</label>
+          <input type="text" class="form-control" id="faqTitle" name="popularTitle" required>
+        </div>
+        <div class="col-12">
+          <label for="FAQs Answer" class="form-label">Popular Category Body</label>
+          <textarea class="form-control" placeholder="Enter Discription" id="floatingTextarea2" name="popularBody"
+            style="height: 100px"></textarea>
+        </div>
+        <!-- <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" required>
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div> -->
+        <div class="col-12">
+          <button type="submit" class="btn btn-success button-sub">Submit Query</button>
+        </div>
+      </form>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+
+
+  <%- include("partials/footer") %>

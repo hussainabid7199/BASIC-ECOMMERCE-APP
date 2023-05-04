@@ -1,0 +1,93 @@
+<h1>
+   
+       
+
+</h1>
+
+
+<%- include("partials/header") %>
+    <section>
+        <div class="table-inner py-5">
+            <table class="table">
+                <thead class="heading-table">
+                   
+                    <tr>
+                        <th scope="col" class="id1">I.D</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Exam ID</th>
+                        <th scope="col">Set ID</th>
+                        <th scope="col">Question No</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Table Name</th>
+                        <th scope="col">Error</th>
+                        <th scope="col">Times</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">View</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                    
+                </thead>
+
+                <tbody>
+                   
+
+                    <% errorData.forEach(function(data){ %>
+                    <tr>
+                        <th scope="row"><%= data.set_id %></th>
+                        <td class="name"><%= data.name.replaceAll('"', "") %></td>
+                        <td class="email"><%= data.exam_id %></td>
+                        <td class="phone"><%= data.set_id %></td>
+                        <td class="price"><%= data.question_no %></td>
+                        <td class="date"><%= data.date %></td>
+                        <td class="date"><%= data.table_name %></td>
+                        <td class="date"><%= data.elem %></td>
+                        <td class="date"><%= data.times %></td>
+                        <td> <button class="btn btn-warning">View</button></td>
+                        <td> <button class="btn btn-success">Delete</button></td>
+                    </tr>
+                    <%  }) %>
+
+                </tbody>
+        </div>
+        </table>
+        </div>
+
+    </section>
+
+
+    <style>
+        thead {
+            background-color: rgb(252, 255, 162);
+            color: black;
+        }
+
+        table {
+            font-size: 1.5rem;
+            font-weight: 550;
+            text-align: center;
+            border: 0.4rem solid #e2f1f471 !important;
+            color: rgb(8, 0, 93) !important;
+        }
+
+        table button {
+            margin: 0rem 0rem;
+        }
+
+        table .btn {
+            padding: .4rem 5rem;
+            font-size: 1.2rem;
+        }
+
+        table tr {
+            /* background-color: rgb(5, 151, 0); */
+            margin: none;
+            border-width: .4rem;
+        }
+
+        .table-inner {
+            background-color: #D5FFE9;
+        }
+    </style>
+
+
+    <%- include("partials/jsCDNfooter") %>

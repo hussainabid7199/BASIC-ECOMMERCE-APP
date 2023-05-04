@@ -1,0 +1,329 @@
+<%- include("partials/header") %>
+
+
+    <!-- Head Section -->
+    <section class="course">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 course-content">
+                    <h6 class="my-5">&#x20b9;<%= currentPrice %></h6>
+                    <h1 class="my-2"> <%=cardTitle %></h1>
+                    <p class="my-3"><%=cardDiscription %></p>
+                    <div class="container my-3">
+                        <div class="row">
+                            <div class="col-lg-12 d-flex publish my-2">
+                                <p> <i class="bi bi-star-fill"></i> &nbsp;<%= rating %></p>
+                                <p class="mx-3">
+                                    <li>Published By <span class="name-course">Joe Natoli</span></li>
+                                </p>
+                            </div>
+                            <div class="button-course my-3">
+                                <button class="btn btn-light wish"><i class="bi bi-heart"></i> &nbsp; Wishlist</button>
+                                <button class="btn btn-primary buy mx-3"> Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 image-course d-flex justify-content-center">
+                    <img src="/assets/image/main/Homepage/gk.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Head Section -->
+
+    <!-- Student Update Bar Design -->
+    <%- include("components/studentDbar") %>
+        <!-- Student Update Bar Design -->
+
+        <!-- Course information Start -->
+
+        <!-- Course information Link & Button Start -->
+        <div class="container">
+            <div class="container-fluid d-flex justify-content-center course-info-link">
+                <div class="element mt-4">
+                <a href="#" class="null" id="course-link">About Course</a>
+                <a href="#" class="null" id="course-link">Course Content</a>
+                <a href="#" class="null" id="course-link">About Publisher</a>
+                <a href="#" class="null" id="course-link">Success Stories</a>
+                <a href="#" class="null" id="course-link">FAQs</a>
+                </div>
+            </div>
+        </div>
+        <!-- Course information Link & Button Start -->
+
+        <!-- About Course Detail -->
+        <div class="container">
+            <div class="course-discrip-title my-5">
+                <div class="name">
+                    <h2>____ Success Stories</h2>
+                </div>
+            </div>
+
+            <div class="titleCourse my-5">
+                <h1><%= aboutCourseTitle %> </h1>
+            </div>
+
+            <div class="course-detail">
+                <h4 class="my-5">Details :-</h4>
+                <p><%= aboutCourseContent1 %></p>
+
+                <p><%= aboutCourseContent2 %></p>
+
+                <ul class="my-5">
+                    <li> <%= aboutbullet1 %></li>
+                    <li><%= aboutbullet2 %></li>
+                    <li><%= aboutbullet3 %></li>
+                    <li><%= aboutbullet4 %></li>
+                    <li><%= aboutbullet5 %></li>
+                </ul>
+
+                <div class="courseBtn">
+                    <a href="#" type="button">Read More...</a>
+                </div>
+            </div>
+        </div>
+        <!-- About Course Detail -->
+
+
+
+
+        <!-- Course content -->
+        <div class="container">
+            <div class="my-5">
+                <div class="name">
+                    <h2>____ Course Content</h2>
+                </div>
+                <h2 class="course-heading-text">Still having a doubt? Let's be more clearer!</h2>
+            </div>
+            <div class="course-inner">
+                <!-- faq question -->
+
+                <div class="course-page ">
+                    <div class="question d-flex justify-content-between">
+                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, laborum.</h5>
+                        <span class="watchtime">Watched 400hrs</span>
+                    </div>
+                </div>
+
+
+
+                <!-- faq answer -->
+
+                <div class="course-body">
+                    <ul class="">
+                        <li class="d-flex justify-content-between context-list">
+                            <div class="d-flex context mt-3">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p class="mt-1 pt-1">Lorem ipsum dolor, sit amet consectetur adipis</p>
+                            </div>
+                            <div class="d-flex justify-content-between context-time pt-1 mt-4 mx-5">
+                                <a href="#">Watch Demo</a>
+                                <h3>6 Minutes</h3>
+                            </div>
+                        </li>
+
+                        <li class="d-flex justify-content-between context-list">
+                            <div class="d-flex context mt-3">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p class="mt-1 pt-1">Lorem ipsum dolor, sit amet consectetur adipis</p>
+                            </div>
+                            <div class="d-flex justify-content-between context-time pt-1 mt-4 mx-5">
+                                <a href="#">Watch Demo</a>
+                                <h3>6 Minutes</h3>
+                            </div>
+                        </li>
+
+                        <li class="d-flex justify-content-between context-list">
+                            <div class="d-flex context mt-3">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p class="mt-1 pt-1">Lorem ipsum dolor, sit amet consectetur adipis</p>
+                            </div>
+                            <div class="d-flex justify-content-between context-time pt-1 mt-4 mx-5">
+                                <a href="#">Watch Demo</a>
+                                <h3>6 Minutes</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="course-inner">
+                <!-- faq question -->
+
+                <div class="course-page ">
+                    <div class="question d-flex justify-content-between">
+                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, laborum.</h5>
+                        <span class="watchtime">Watched 400hrs</span>
+                    </div>
+                </div>
+
+
+
+                <!-- faq answer -->
+
+                <div class="course-body">
+                    <ul class="">
+                        <li class="d-flex justify-content-between context-list">
+                            <div class="d-flex context mt-3">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p class="mt-1 pt-1">Lorem ipsum dolor, sit amet consectetur adipis</p>
+                            </div>
+                            <div class="d-flex justify-content-between context-time pt-1 mt-4 mx-5">
+                                <a href="#">Watch Demo</a>
+                                <h3>6 Minutes</h3>
+                            </div>
+                        </li>
+
+                        <li class="d-flex justify-content-between context-list">
+                            <div class="d-flex context mt-3">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p class="mt-1 pt-1">Lorem ipsum dolor, sit amet consectetur adipis</p>
+                            </div>
+                            <div class="d-flex justify-content-between context-time pt-1 mt-4 mx-5">
+                                <a href="#">Watch Demo</a>
+                                <h3>6 Minutes</h3>
+                            </div>
+                        </li>
+
+                        <li class="d-flex justify-content-between context-list">
+                            <div class="d-flex context mt-3">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p class="mt-1 pt-1">Lorem ipsum dolor, sit amet consectetur adipis</p>
+                            </div>
+                            <div class="d-flex justify-content-between context-time pt-1 mt-4 mx-5">
+                                <a href="#">Watch Demo</a>
+                                <h3>6 Minutes</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="course-inner">
+                <!-- faq question -->
+
+                <div class="course-page ">
+                    <div class="question d-flex justify-content-between">
+                        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, laborum.</h5>
+                        <span class="watchtime">Watched 400hrs</span>
+                    </div>
+                </div>
+
+
+
+                <!-- faq answer -->
+
+                <div class="course-body">
+                    <ul class="">
+                        <li class="d-flex justify-content-between context-list">
+                            <div class="d-flex context mt-3">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p class="mt-1 pt-1">Lorem ipsum dolor, sit amet consectetur adipis</p>
+                            </div>
+                            <div class="d-flex justify-content-between context-time pt-1 mt-4 mx-5">
+                                <a href="#">Watch Demo</a>
+                                <h3>6 Minutes</h3>
+                            </div>
+                        </li>
+
+                        <li class="d-flex justify-content-between context-list">
+                            <div class="d-flex context mt-3">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p class="mt-1 pt-1">Lorem ipsum dolor, sit amet consectetur adipis</p>
+                            </div>
+                            <div class="d-flex justify-content-between context-time pt-1 mt-4 mx-5">
+                                <a href="#">Watch Demo</a>
+                                <h3>6 Minutes</h3>
+                            </div>
+                        </li>
+
+                        <li class="d-flex justify-content-between context-list">
+                            <div class="d-flex context mt-3">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p class="mt-1 pt-1">Lorem ipsum dolor, sit amet consectetur adipis</p>
+                            </div>
+                            <div class="d-flex justify-content-between context-time pt-1 mt-4 mx-5">
+                                <a href="#">Watch Demo</a>
+                                <h3>6 Minutes</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Course content -->
+
+
+        <!-- About Publisher -->
+        <div class="container">
+            <div class="my-5">
+                <div class="name">
+                    <h2>____ About Publisher</h2>
+                </div>
+                <h2 class="course-heading-text">Still having a doubt? Let's be more clearer!</h2>
+            </div>
+
+
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-3 col-sm-12 col-md-12 aboutPublisher">
+                        <img src="/assets/image/main/Homepage/manimage.jpg" alt="" class="img-fluid">
+                        <div class="inner-content my-4">
+                            <div class="publisher-info d-flex">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p><span class="rate mx-2"><p><b>4.5</b></p></span>&nbsp; &nbsp;<p>Instructor Rating</p></p> 
+                            </div>
+                            <div class="publisher-info d-flex">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p><span class="rate mx-2"><p><b>4.5</b></p></span>&nbsp; &nbsp;<p>Instructor Rating</p></p> 
+                            </div>
+                            <div class="publisher-info d-flex">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p><span class="rate mx-2"><p><b>4.5</b></p></span>&nbsp; &nbsp;<p>Instructor Rating</p></p> 
+                            </div>
+                            <div class="publisher-info d-flex">
+                                <i class="bi bi-arrow-right-circle-fill mx-4"></i>
+                                <p><span class="rate mx-2"><p><b>4.5</b></p></span>&nbsp; &nbsp;<p>Instructor Rating</p></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-sm-12 col-md-12">
+                        <div class="container publisher-info-inner">
+                            <h1>Anudeep Ayyagari</h1>
+                            <h3 class="my-4">29 year UX + Design Veteran; Consultant, Author & Speaker</h3>
+
+                            <hr class="hr-line">
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque tempore enim natus perspiciatis, doloribus culpa quasi mollitia a sapiente aspernatur eum iure totam deleniti dolorum placeat ex ab nam laudantium voluptates! Velit expedita accusantium voluptatibus nemo eligendi vero, itaque est, rerum excepturi corrupti non temporibus eveniet numquam facere doloremque impedit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dolores. Blanditiis similique et consectetur tempora neque vel accusamus ipsam doloribus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, corporis. Reprehenderit, possimus? Asperiores facere laborum tenetur quia, earum autem necessitatibus?</p>
+                            <div class="courseBtn">
+                                <a href="#" type="button">Read More...</a>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- About Publisher -->
+
+
+        <!-- Success section start -->
+        <%- include("components/carousel") %>
+        <!-- Success section End -->
+
+
+
+        <!-- FAQs Section Start -->
+        <%- include("components/faqs") %>
+        <!-- FAQs Section End -->
+
+
+
+
+        <%- include("partials/footer") %>

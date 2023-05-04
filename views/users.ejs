@@ -1,0 +1,86 @@
+
+  <%- include("partials/header") %>
+<section>
+    <div class="table-inner py-5">
+        <table class="table">
+            <thead class="heading-table">
+                <tr>
+                    <th scope="col" class="id1">I.D</th>
+                    <th scope="col">User Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Wallet</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+
+                <% errorData.forEach(function(data){ %>
+                    <tr>
+                        <th scope="row"><%= data.id %></th>
+                        <td class="name"><%= data.name %></td>
+                        <td class="email">adscamponline@gmail.com</td>
+                        <td class="phone">+91-9383728221</td>
+                        <td class="price">1435</td>
+                        <td class="date">24/09/2022</td>
+                        <td> <button class="btn btn-success">Profile</button></td>
+                    </tr>
+                    <% }) %>
+              
+                <tr>
+                    <th scope="row">10</th>
+                    <td class="name">Ramesh Kumar Varma</td>
+                    <td class="email">adscamponline@gmail.com</td>
+                    <td class="phone">+91-9383728221</td>
+                    <td class="price">1435</td>
+                    <td class="date">24/09/2022</td>
+                    <td> <button class="btn btn-success">Profile</button></td>
+                </tr>
+            
+            </tbody>
+        </div>
+        </table>
+    </div>
+
+</section>
+
+
+    <style>
+        thead{
+            background-color: rgb(252, 255, 162);
+            color: black;
+        }
+
+        table {
+            font-size: 1.5rem;
+            font-weight: 550;
+            text-align: center;
+            border: 0.4rem solid #e2f1f471 !important;
+            color: rgb(8, 0, 93) !important;
+        }
+
+        table button {
+            margin: 0rem 0rem;
+        }
+
+        table .btn{
+            padding: .4rem 5rem;
+            font-size: 1.2rem;
+        }
+
+        table tr{
+            /* background-color: rgb(5, 151, 0); */
+            margin: none;
+            border-width: .4rem;
+        }
+        .table-inner{
+            background-color: #D5FFE9;
+        }
+    </style>
+
+
+<%- include("partials/footer") %>
+
+

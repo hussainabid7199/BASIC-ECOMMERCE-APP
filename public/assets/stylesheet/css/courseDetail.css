@@ -1,0 +1,273 @@
+@charset "UTF-8";
+.custom-col {
+  color: #1FB968;
+  font-weight: 700;
+}
+
+.course {
+  background-color: #1FB968;
+  padding: 5rem 0rem;
+}
+
+.course-content h6 {
+  background-color: rgb(1, 1, 66);
+  padding: 0.5rem 0.7rem;
+  width: max-content;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  border: 0.3rem solid rgb(1, 1, 66);
+  border-radius: 0.3rem;
+}
+
+.course-content h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+.course-content p {
+  font-size: 2rem;
+  font-weight: 550;
+  color: white;
+}
+
+.publish i {
+  color: orange;
+}
+
+.publish p {
+  font-size: 1.7rem;
+}
+
+.publish li {
+  font-size: 1.7rem;
+  color: white;
+}
+
+.name-course {
+  text-decoration: underline;
+}
+
+.button-course button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.4rem;
+}
+
+.wish {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: 0.1rem solid rgb(255, 255, 255);
+}
+
+.buy {
+  background-color: rgb(1, 1, 66);
+  border: 0.1rem solid rgb(1, 1, 66);
+}
+
+.image-course {
+  padding: 3rem;
+  background-color: #1FB968;
+}
+
+.image-course img {
+  box-sizing: border-box;
+  box-shadow: 0 0.3rem 1.6rem rgb(255, 255, 255);
+  border-radius: 0.8rem;
+  transition: box-shadow 1s ease-in-out;
+}
+
+.image-course img:hover {
+  box-sizing: border-box;
+  box-shadow: 0 0.7rem 2rem rgba(252, 255, 47, 0.733);
+  border-radius: 0.8rem;
+}
+
+.element a {
+  margin: 1.5rem 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(109, 109, 109);
+}
+
+.active-link {
+  color: #1FB968 !important;
+}
+
+@media (max-width: 920px) {
+  .element a {
+    margin: 0rem 1rem;
+    font-size: 1.3rem;
+    width: 100% !important;
+  }
+  .course-info-link {
+    margin: auto;
+  }
+}
+.course-discrip-title h2 {
+  color: #1FB968;
+}
+
+.titleCourse h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.course-detail h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.course-detail p,
+li {
+  font-size: 1.7rem;
+  font-weight: 550;
+}
+
+.course-heading {
+  border-bottom: #777;
+  padding: 20px 60px;
+  color: #1FB968;
+  font-weight: 700;
+}
+
+.course-heading-text {
+  border-bottom: #777;
+  padding: 20px 60px;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hr-line {
+  width: 60%;
+  margin: auto;
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.course-page {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  width: 95%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+  font-size: 1.5rem;
+  border: 0.1rem solid rgb(122, 122, 122);
+}
+
+.watchtime {
+  font-size: 1.5rem;
+}
+
+.question h5 {
+  font-size: 1.7rem;
+  font-weight: 550;
+}
+
+.course-body {
+  margin: auto;
+  /* text-align: center; */
+  width: 95%;
+  padding: auto;
+  font-size: 2rem;
+}
+
+.context-list i {
+  font-size: 2.5rem;
+}
+
+.context {
+  width: 75%;
+}
+
+.context p {
+  margin: 0rem;
+  padding: 0rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.context-time {
+  width: 25%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.activeBtncourse,
+.course-page:hover {
+  background-color: rgba(118, 255, 118, 0.137);
+  color: rgb(0, 0, 0);
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.course-body {
+  background-color: #E2F1F4;
+  display: none;
+  overflow: hidden;
+}
+
+.course-page::before {
+  content: "➕";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 1.6rem;
+  color: #777;
+  float: left;
+  margin-right: 2rem;
+}
+
+.activeBtncourse::before {
+  content: "➖";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.aboutPublisher img {
+  height: 28rem;
+  width: 90%;
+  padding: auto;
+  border: 0.1rem solid rgba(0, 0, 0, 0.404);
+}
+
+.publisher-info i {
+  font-size: 2rem;
+  color: #1FB968;
+}
+
+.publisher-info p {
+  font-size: 1.8rem;
+}
+
+.publisher-info-inner h1 {
+  font-size: 6rem;
+  font-weight: 650;
+}
+
+.publisher-info-inner h3 {
+  font-size: 3rem;
+  font-weight: 550;
+}
+
+.publisher-info-inner p {
+  font-size: 1.9rem;
+}
+
+@media (max-width: 920px) {
+  .aboutPublisher img {
+    height: 28rem;
+    width: 100%;
+    padding: auto;
+    border: 0.1rem solid rgba(0, 0, 0, 0.404);
+  }
+  .publisher-info {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=courseDetail.css.map */
